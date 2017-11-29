@@ -1,0 +1,36 @@
+{
+  "name": "minon-strike-back",
+  "version": "1.0.0",
+  "description": "A board game",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nyc --reporter=html --reporter=text mocha test/**/*.js",
+    "report-coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "report-codecov": "nyc report --reporter=lcov > coverage.lcov && codecov"
+  },
+  "author": "Kevin Olguin Jönsson",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css-cli": "^4.1.10",
+    "codecov": "^3.0.0",
+    "coveralls": "^3.0.0",
+    "csslint": "^1.0.5",
+    "eslint": "^4.12.0",
+    "eslint-plugin-react": "^7.5.1",
+    "html-minifier": "^3.5.7",
+    "htmlhint": "^0.9.13",
+    "js-yaml": "^3.10.0",
+    "jscs": "^3.0.7",
+    "jsonlint": "^1.6.2",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
+    "stylelint": "^8.3.1",
+    "uglify-js": "^3.2.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "jstransformer-markdown-it": "^2.0.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}

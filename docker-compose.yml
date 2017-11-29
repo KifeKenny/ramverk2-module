@@ -1,0 +1,28 @@
+version: "3"
+services:
+    node_8_alpine_game:
+        build:
+            context: .
+            dockerfile: docker/test/Dockerfile-node-8-alpine
+        volumes:
+            - ./:/app/
+        ports:
+            - "3000:3003"
+
+    node_7_alpine_game:
+        build:
+            context: .
+            dockerfile: docker/test/Dockerfile-node-7-alpine
+        volumes:
+            - ./:/app/
+        ports:
+            - "3000:3001"
+
+    node_6_alpine_game:
+        build:
+            context: .
+            dockerfile: docker/test/Dockerfile-node-6-alpine
+        volumes:
+            - ./:/app/
+        ports:
+            - "3000:3002"
