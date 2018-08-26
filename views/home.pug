@@ -1,4 +1,26 @@
 extend layout.pug
 
-block main
-    h1 Hello
+block middle
+    div(class="col-sm-8 text-left")
+        h1 For my king
+        hr
+        p#lobbyAmount #[strong Lobby:]
+        div#gameLobby
+        div#lobby
+            p #[strong Username:]
+            input#username(type="text")
+            input#joinLobby(type="button" value="Join lobby")
+
+
+
+block side2
+    div(class="col-sm-2 sidenav text-left")
+        h4 Message
+        div#chatt
+        input#message(type="text")
+        input#sendMessage(type="button" value="send")
+        input#clearLog(type="button" value="clear log")
+        input#close(type="button" value="Disconnect")
+
+block script
+    script(src="/js/client2.js")

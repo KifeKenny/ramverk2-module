@@ -7,8 +7,13 @@
     "start": "node index.js",
     "test": "nyc --reporter=html --reporter=text mocha test/**/*.js",
     "report-coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "report-codecov": "nyc report --reporter=lcov > coverage.lcov && codecov"
+    "report-codecov": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "clean": "rm -rf node_modules package-lock.json",
+    "posttest": "npm run eslint"
   },
+  "keywords": [
+    "websocket"
+  ],
   "author": "Kevin Olguin Jönsson",
   "license": "ISC",
   "devDependencies": {
@@ -20,17 +25,20 @@
     "eslint-plugin-react": "^7.5.1",
     "html-minifier": "^3.5.7",
     "htmlhint": "^0.9.13",
+    "javascript-style-guide": "^0.9.10",
     "js-yaml": "^3.10.0",
     "jscs": "^3.0.7",
     "jsonlint": "^1.6.2",
     "mocha": "^4.0.1",
     "nyc": "^11.3.0",
     "stylelint": "^8.3.1",
-    "uglify-js": "^3.2.0"
+    "uglify-js": "^3.2.0",
+    "ws": "^3.3.1"
   },
   "dependencies": {
     "express": "^4.16.2",
     "jstransformer-markdown-it": "^2.0.0",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^2.0.0-rc.4",
+    "wscat": "^2.0.1"
   }
 }

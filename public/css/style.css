@@ -1,10 +1,88 @@
 body {
-    margin: 8px auto;
-    max-width: 700px;
+    overflow-y: scroll;
+    background-color: #f1f1f1;
 }
 
-#image {
-    position: relative;
-    top: 0;
-    left: 0;
+/* basic fixes and style values */
+.col-sm-8 {
+    min-height: 800px;
+    background-color: white;
+    padding-bottom: 50px;
+    margin-left: 2%;
+}
+
+.col-sm-2 {
+    width: 30%;
+}
+
+.fix {
+    overflow: auto;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.row.content {
+    height: 450px;
+}
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+
+/* For the game except footer*/
+#chatt {
+    /* margin-top: 50px; */
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border: 1px solid #aaa;
+    overflow: scroll;
+    font-size: smaller;
+    margin-bottom: 10px;
+}
+
+#message {
+    width: 80%;
+    margin-right: 5%;
+}
+
+#sendMessage {
+    width: 15%;
+}
+
+#clearLog {
+    margin-top: 5px;
+}
+
+/* just footer and media */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
 }

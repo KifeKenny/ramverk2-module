@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Game | Play</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<h1>Game</h1>
+
+<form id="form1">
+    <p>
+        Select username:
+        <br>
+        <input id="nickName" type="text">
+        <input id="userName" type="hidden">
+        <br>
+        <br>
+        <label>Connect: </label><br>
+        <input id="connect_url" type="text" value="ws://localhost:1337/" >
+        <select id="protocol">
+            <option value="json">json</option>
+        </select>
+        <input id="connect" type="button" value="Connect">
+        <input id="close" type="button" value="Close connection">
+
+    </p>
+</form>
+
+<div id="game"></div>
+<div id="log" class="output">
+</div>
+<input id="clearLog" type="button" value="Clear log">
+
+<script src="js/client.js"></script>
+</body>
+</html>
