@@ -18,6 +18,10 @@ const server = http.createServer(app);
 
 var wss = new wChatt(server, true, "/chatt");
 
+if (wss == "cat") {
+    console.log("cat");
+}
+
 
 // enable views from pug
 app.set('view engine', 'pug');

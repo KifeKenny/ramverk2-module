@@ -15,6 +15,10 @@ const server = http.createServer(app);
 
 var wss = new wChatt(server, true, "/chatt");
 
+if (wss == "cat") {
+    console.log("cat");
+}
+
 // Serve static files
 var staticFiles = path.join(__dirname, "");
 

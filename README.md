@@ -1,5 +1,11 @@
 # ramverk2-module
 
+I run it my npm on this version and that works for me, try if error
+
+```
+npm install -g npm@4.6.1   
+```
+
 Take the repo and do
 ```
  make install
