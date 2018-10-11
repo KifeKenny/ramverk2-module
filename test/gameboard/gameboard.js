@@ -12,7 +12,7 @@ const Gameb = require("../../src/gameboard/gameboard");
 * Check board construct for length and width
 */
 function checkGameboard(options, expected) {
-    let option = {x: options.x, y: options.y}
+    let option = {x: options.x, y: options.y};
     let game = new Gameb(option);
     let size = game.getBoard().length;
 
@@ -24,7 +24,7 @@ function checkGameboard(options, expected) {
 * check if we can get correct piece
 */
 function checkPiece(options, expected, yyy) {
-    let option = {x: options.board.x, y: options.board.y}
+    let option = {x: options.board.x, y: options.board.y};
     let game = new Gameb(option);
     let piece = game.getPiece(options.x, options.y);
 
@@ -41,6 +41,7 @@ function checkPiece(options, expected, yyy) {
 function characterPlace(options, expected) {
     let game = new Gameb();
     let result = game.placeCharacter(options.x, options.y, 0);
+
     if (expected == "true") {
         assert.ok(result);
     } else if (expected == "false") {
@@ -66,7 +67,7 @@ describe("test GameBoard", function() {
         {board: tests[0], x: 1, y: 1},
         {board: tests[0], x: 6, y: 13},
         {board: tests[0], x: 7, y: 9}
-    ]
+    ];
 
     var testPlace = [
         {x: 1, y: 1, res: "true"},
@@ -76,7 +77,7 @@ describe("test GameBoard", function() {
         {x: 11, y: 10, res: "false"},
         {x: 6, y: 0, res: "false"},
         {x: 12, y: 15, res: "false"}
-    ]
+    ];
 
     tests.forEach(function(test) {
         describe("board size of " + test.result, function() {
