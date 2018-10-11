@@ -43,10 +43,7 @@ body {
     height: 100%;
 }
 
-
-/* For the game except footer*/
 #chatt {
-    /* margin-top: 50px; */
     width: 100%;
     height: 200px;
     background-color: white;
